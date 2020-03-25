@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/04/2019, 11:30:53 PM
+    Author     : SOPHIA
+*/
+
+.parent {
+    -fx-background-color: #ffffff;
+}
+.sideButton {
+    -fx-background-color: #B8E0D2;
+}
+
+.sideButton:hover {
+    -fx-background-color: #D6EADF; 
+}
+
+
+.button{
+
+    -fx-background-color: #E8E8E8;
+}
+
+.button:hover{
+    -fx-background-color: #B8E0D2;
+}
+
+
+
+.leftBackground{
+
+    -fx-background-color: #d5eeee;
+}
+
+.rightBackground{
+    -fx-background-color: #ffffff;
+
+}
+.textbox{
+    -fx-border-color: #d5eeee;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+}
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #D6EADF;
+}
+
+.chart-title {
+    -fx-text-fill: 	
+       #65c3b5;
+    -fx-font-size: 1.3em;
+}
+.username-title{
+    -fx-text-fill:#65c3b5;
+        -fx-font-size: 2.1em;
+        
+}
+
+.page-title{
+    -fx-text-fill:#000000;
+        -fx-font-size: 2.1em;
+    
+}
+
+.default-color0.chart-bar { -fx-bar-fill: #00a5b3; }
+.default-color1.chart-bar { -fx-bar-fill: #00a5b36; }
+
+
+.data0.chart-pie { -fx-pie-color: turquoise; }
+.data1.chart-pie { -fx-pie-color: aquamarine; }
+.data2.chart-pie { -fx-pie-color: cornflowerblue; }
+.data3.chart-pie { -fx-pie-color: blue; }
+.data4.chart-pie { -fx-pie-color: cadetblue; }
+.data5.chart-pie { -fx-pie-color: navy; }
+.data6.chart-pie { -fx-pie-color: deepskyblue; }
+.data7.chart-pie { -fx-pie-color: cyan; }
+.data8.chart-pie { -fx-pie-color: steelblue; }
+.data9.chart-pie { -fx-pie-color: teal; }
+.data10.chart-pie { -fx-pie-color: royalblue; }
+.data11.chart-pie { -fx-pie-color: dodgerblue; }
+
+.default-color0.chart-series-line { -fx-stroke: teal; }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="githubfitfans.ExerciseChartsController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="499.0" prefWidth="352.0" styleClass="leftBackground" stylesheets="@StyleSheet.css">
+         <children>
+            <BarChart fx:id="aBarChart" layoutX="8.0" layoutY="75.0" legendVisible="false" prefHeight="327.0" prefWidth="339.0" stylesheets="@StyleSheet.css" title="Areobics Exercise Summary">
+              <xAxis>
+                <CategoryAxis label="Type of Areobics Exercise" prefWidth="356.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Total Distance (KM)" side="LEFT" />
+              </yAxis>
+               <styleClass>
+                  <String fx:value="chart-title" />
+                  <String fx:value="default-color1" />
+                  <String fx:value="textbox" />
+               </styleClass>
+            </BarChart>
+            <Label layoutX="35.0" layoutY="17.0" prefHeight="49.0" prefWidth="232.0" styleClass="page-title" stylesheets="@StyleSheet.css" text="Exercise Charts">
+               <font>
+                  <Font name="Gabriola" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="243.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/weightlifter.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="home" layoutX="632.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleHomeButton" prefHeight="27.0" prefWidth="64.0" stylesheets="@StyleSheet.css" text="Home" textFill="#268265" />
+      <Button fx:id="logout" layoutX="620.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="27.0" prefWidth="64.0" stylesheets="@StyleSheet.css" text="Logout" textFill="#268265" />
+      <BarChart fx:id="eBarChart" layoutX="359.0" layoutY="81.0" legendVisible="false" prefHeight="320.0" prefWidth="339.0" stylesheets="@StyleSheet.css" title="Resistance Exercise Summary">
+         <xAxis>
+            <CategoryAxis label="Type of Resistance Exericse" prefWidth="356.0" side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis label="Total Reps" side="LEFT" />
+         </yAxis>
+         <styleClass>
+            <String fx:value="chart-title" />
+            <String fx:value="default-color0" />
+            <String fx:value="textbox" />
+         </styleClass>
+      </BarChart>
+      <Button layoutX="559.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="27.0" prefWidth="64.0" stylesheets="@StyleSheet.css" text="Back" textFill="#268265" />
+   </children>
+</AnchorPane>

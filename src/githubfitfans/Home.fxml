@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="710.0" styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="githubfitfans.HomeController">
+   <children>
+      <VBox layoutX="28.0" layoutY="453.0" />
+      <AnchorPane layoutX="296.0" layoutY="5.0" prefHeight="510.0" prefWidth="423.0" styleClass="rightBackground" stylesheets="@StyleSheet.css">
+         <children>
+            <AnchorPane layoutX="26.0" layoutY="24.0" prefHeight="456.0" prefWidth="367.0" styleClass="rightBackground" stylesheets="@StyleSheet.css">
+               <children>
+                  <Circle fx:id="bmiCircle" fill="#b8e0d2" layoutX="72.0" layoutY="131.0" radius="65.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Ellipse fill="#fefffe" layoutX="72.0" layoutY="131.0" radiusX="55.0" radiusY="55.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label alignment="CENTER" layoutX="25.0" layoutY="81.0" prefHeight="28.0" prefWidth="93.0" text="BMI">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bmi" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="110.0" prefHeight="47.0" prefWidth="117.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="weightCircle" fill="#b8e0d2" layoutX="260.0" layoutY="131.0" radius="65.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Ellipse fill="#fefffe" layoutX="260.0" layoutY="131.0" radiusX="55.0" radiusY="55.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="83.0" prefHeight="28.0" prefWidth="74.0" text="Weight" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentWeight" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="110.0" prefHeight="47.0" prefWidth="130.0" text="0">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="currentWeight1" alignment="CENTER" contentDisplay="CENTER" layoutX="221.0" layoutY="147.0" prefHeight="47.0" prefWidth="81.0" text="KG">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="-1.0" layoutY="227.0" prefHeight="236.0" prefWidth="368.0" styleClass="rightBackground" stylesheets="@StyleSheet.css">
+                     <children>
+                        <Circle fx:id="heartRateCircle" fill="#b8e0d2" layoutX="263.0" layoutY="98.0" radius="65.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Ellipse fill="#fefffe" layoutX="263.0" layoutY="98.0" radiusX="55.0" radiusY="55.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label fx:id="avgHeartRate" alignment="CENTER" contentDisplay="CENTER" layoutX="199.0" layoutY="89.0" prefHeight="47.0" prefWidth="130.0" text="0" textAlignment="CENTER">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Circle fx:id="stepsCircle" fill="#b8e0d2" layoutX="75.0" layoutY="97.0" radius="65.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Ellipse fill="#fefffe" layoutX="75.0" layoutY="97.0" radiusX="55.0" radiusY="55.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="33.0" layoutY="41.0" prefHeight="61.0" prefWidth="84.0" text="Average Steps" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="avgSteps" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="89.0" prefHeight="43.0" prefWidth="110.0" text="0">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="currentWeight11" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="124.0" prefHeight="28.0" prefWidth="81.0" text="STEPS">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="currentWeight111" alignment="CENTER" contentDisplay="CENTER" layoutX="223.0" layoutY="126.0" prefHeight="28.0" prefWidth="81.0" text="BPM">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="stepsStatus" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="-4.0" layoutY="162.0" prefHeight="53.0" prefWidth="159.0" text="Status" textAlignment="CENTER" wrapText="true" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="1.0" layoutX="221.0" layoutY="43.0" prefHeight="61.0" prefWidth="84.0" text="Average Heart Rate" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="heartRateStatus" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="164.0" prefHeight="72.0" prefWidth="159.0" text="Status" textAlignment="CENTER" wrapText="true" />
+                        <Button layoutX="128.0" layoutY="28.0" mnemonicParsing="false" onAction="#stepButton" stylesheets="@StyleSheet.css" text="?" textFill="#268265" />
+                        <Button layoutX="316.0" layoutY="28.0" mnemonicParsing="false" onAction="#helpButton" stylesheets="@StyleSheet.css" text="?" textFill="#268265" />
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="bmiStatus" alignment="TOP_CENTER" contentDisplay="CENTER" layoutY="197.0" prefHeight="43.0" prefWidth="144.0" text="Status" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="weightStatus" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="195.0" prefHeight="43.0" prefWidth="144.0" text="Status" textAlignment="CENTER" wrapText="true" />
+                  <Button layoutX="125.0" layoutY="70.0" mnemonicParsing="false" onAction="#bmiButton" stylesheets="@StyleSheet.css" text="?" textFill="#268265" />
+                  <Button layoutX="314.0" layoutY="66.0" mnemonicParsing="false" onAction="#weightButton" stylesheets="@StyleSheet.css" text="?" textFill="#268265" />
+                  <Button fx:id="logout" layoutX="300.0" layoutY="-12.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefWidth="74.0" text="Logout" textFill="#268265" />
+               </children>
+            </AnchorPane>
+            <Label fx:id="userLabel" layoutX="39.0" layoutY="13.0" prefHeight="52.0" prefWidth="200.0" styleClass="username-title" stylesheets="@StyleSheet.css" text="USERNAME" textAlignment="CENTER">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-2.0" layoutY="-8.0" prefHeight="524.0" prefWidth="304.0" styleClass="leftBackground" stylesheets="@StyleSheet.css">
+         <children>
+            <HBox fx:id="exercise" alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="87.0" onMouseClicked="#handleExerciseButton" prefHeight="53.0" prefWidth="277.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="171.0" text="EXERCISE" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/weightlifter.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="199.0" onMouseClicked="#handleFoodButton" prefHeight="53.0" prefWidth="278.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="174.0" text="FOOD" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox />
+                  <ImageView fitHeight="46.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/vegetables.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox fx:id="exercise11" alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="255.0" onMouseClicked="#handleMedicalButton" prefHeight="53.0" prefWidth="278.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="177.0" text="HEALTH" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="43.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/stethoscope.png" />
+                     </image>
+                  </ImageView>
+                  <HBox />
+               </children>
+            </HBox>
+            <HBox fx:id="exercise111" alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="311.0" onMouseClicked="#handleSleepButton" prefHeight="53.0" prefWidth="278.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="168.0" text="SLEEP" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/moon.png" />
+                     </image>
+                  </ImageView>
+                  <HBox />
+               </children>
+            </HBox>
+            <HBox fx:id="exercise1111" alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="367.0" onMouseClicked="#handleWellnessButton" prefHeight="53.0" prefWidth="278.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="172.0" text="WELLNESS" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="51.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/meditation.png" />
+                     </image>
+                  </ImageView>
+                  <HBox />
+               </children>
+            </HBox>
+            <HBox fx:id="exercise11111" alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="423.0" onMouseClicked="#handleUserButton" prefHeight="53.0" prefWidth="278.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="166.0" text="SETTINGS" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="51.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/settings.png" />
+                     </image>
+                  </ImageView>
+                  <HBox />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="22.0" layoutY="30.0" prefHeight="49.0" prefWidth="193.0" stylesheets="@StyleSheet.css" text="Dashboard">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="BOTTOM_CENTER" layoutX="13.0" layoutY="143.0" onMouseClicked="#handleStepsButton" prefHeight="53.0" prefWidth="277.0" styleClass="sideButton" stylesheets="@StyleSheet.css">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="171.0" text="STEPS" textFill="#219ea4">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/step.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

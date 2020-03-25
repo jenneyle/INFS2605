@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="710.0" styleClass="parent" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="githubfitfans.LoginController">
+   <children>
+      <AnchorPane layoutX="-3.0" prefHeight="483.0" prefWidth="402.0" styleClass="leftBackground" stylesheets="@StyleSheet.css" />
+      <ImageView fitHeight="219.0" fitWidth="246.0" layoutX="423.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/newlogo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="425.0" layoutY="268.0" text="Your Fitness Adventure Awaits !" textFill="#609e96">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane blendMode="DARKEN" layoutX="435.0" layoutY="301.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="128.0" prefWidth="250.0">
+         <children>
+            <TextField fx:id="username" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="20.0" layoutY="28.0" prefHeight="27.0" prefWidth="200.0" promptText="Username" styleClass="textbox" stylesheets="@StyleSheet.css" />
+            <PasswordField fx:id="pword" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="20.0" layoutY="67.0" prefHeight="27.0" prefWidth="200.0" promptText="Password" styleClass="textbox" stylesheets="@StyleSheet.css" />
+            <Button fx:id="signupbtn" contentDisplay="CENTER" layoutX="130.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleSignupButton" prefHeight="27.0" prefWidth="90.0" text="Sign Up " textFill="#268265" />
+            <Button fx:id="loginbtn" contentDisplay="CENTER" layoutX="20.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="27.0" prefWidth="90.0" text="Login" textFill="#268265" />
+            <Label fx:id="incorrectDetailMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="3.0" prefHeight="17.0" prefWidth="226.0" text="*Incorrect username or password*" textAlignment="CENTER" textFill="#ee7272" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

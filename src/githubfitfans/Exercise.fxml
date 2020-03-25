@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="githubfitfans.ExerciseController">
+    <stylesheets>
+        <URL value="@SophiasFantasticStyle.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="10.0" prefHeight="483.0" prefWidth="710.0">
+         <children>
+            <Button fx:id="home" layoutX="627.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleHomeButton" stylesheets="@StyleSheet.css" text="Home" textFill="#268265" />
+            <Button fx:id="logout" layoutX="624.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleLogoutButton" stylesheets="@StyleSheet.css" text="Logout" textFill="#268265" />
+            <TableView fx:id="aerobicTable" layoutX="310.0" layoutY="50.0" prefHeight="100.0" prefWidth="378.0" stylesheets="@StyleSheet.css">
+              <columns>
+                <TableColumn fx:id="colDate" prefWidth="111.0" text="Date" />
+                <TableColumn fx:id="colAerobic" prefWidth="140.0" text="Aerobic" />
+                  <TableColumn fx:id="colKm" prefWidth="126.0" text="Kilometers" />
+              </columns>
+               <styleClass>
+                  <String fx:value="leftBackground" />
+                  <String fx:value="textbox" />
+                  <String fx:value="table-row-cell" />
+               </styleClass>
+            </TableView>
+            <Button fx:id="delete" layoutX="310.0" layoutY="153.0" mnemonicParsing="false" onAction="#handleADeleteButton" prefWidth="62.0" stylesheets="@StyleSheet.css" text="Delete" textFill="#268265" />
+            <TableView fx:id="resistanceTable" layoutX="310.0" layoutY="196.0" prefHeight="92.0" prefWidth="378.0" stylesheets="@StyleSheet.css">
+              <columns>
+                <TableColumn fx:id="colRDate" prefWidth="75.0" text="Date" />
+                <TableColumn fx:id="colResistance" prefWidth="127.0" text="Resistance" />
+                  <TableColumn fx:id="colReps" prefWidth="66.0" text="Reps" />
+                  <TableColumn fx:id="colKgs" prefWidth="109.0" text="Kilograms" />
+              </columns>
+               <styleClass>
+                  <String fx:value="leftBackground" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="textbox" />
+               </styleClass>
+            </TableView>
+            <Button fx:id="rDelete" layoutX="310.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleRDeleteButton" prefWidth="62.0" stylesheets="@StyleSheet.css" text="Delete" textFill="#268265" />
+            <TableView fx:id="gymTable" layoutX="310.0" layoutY="337.0" prefHeight="92.0" prefWidth="378.0" stylesheets="@StyleSheet.css">
+              <columns>
+                <TableColumn fx:id="colGDate" prefWidth="108.0" text="Date" />
+                <TableColumn fx:id="colGym" prefWidth="134.0" text="Gym Attendance" />
+                  <TableColumn fx:id="colGymHrs" prefWidth="135.0" text="Hours Spent" />
+              </columns>
+               <styleClass>
+                  <String fx:value="leftBackground" />
+                  <String fx:value="table-row-cell" />
+                  <String fx:value="textbox" />
+               </styleClass>
+            </TableView>
+            <Button fx:id="gDelete" layoutX="310.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleGDeleteButton" prefWidth="62.0" stylesheets="@StyleSheet.css" text="Delete" textFill="#268265" />
+            <Button fx:id="charts" layoutX="524.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleChartButton" stylesheets="@StyleSheet.css" text="More Charts" textFill="#268265" />
+            <Label fx:id="userLabel" layoutX="303.0" layoutY="-2.0" prefHeight="52.0" prefWidth="200.0" styleClass="username-title" stylesheets="@StyleSheet.css" text="USERNAME" textFill="#65c3b5">
+               <font>
+                  <Font name="Gabriola" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="eraseMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="157.0" prefHeight="17.0" prefWidth="136.0" text="Data has been erased" textAlignment="CENTER" textFill="#538493" />
+            <Label fx:id="eraseMsg2" alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="295.0" prefHeight="17.0" prefWidth="136.0" text="Data has been erased" textAlignment="CENTER" textFill="#538493" />
+            <Label fx:id="eraseMsg3" alignment="CENTER" contentDisplay="CENTER" layoutX="379.0" layoutY="437.0" prefHeight="17.0" prefWidth="136.0" text="Data has been erased" textAlignment="CENTER" textFill="#538493" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="2.0" prefHeight="493.0" prefWidth="291.0">
+         <children>
+            <VBox layoutX="57.0" layoutY="139.0" prefHeight="41.0" prefWidth="215.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <AnchorPane layoutX="-6.0" layoutY="-2.0" prefHeight="495.0" prefWidth="294.0" styleClass="leftBackground" stylesheets="@StyleSheet.css">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="55.0" layoutX="177.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/weightlifter.png" />
+                     </image>
+                  </ImageView>
+                  <DatePicker fx:id="date" layoutX="88.0" layoutY="113.0" prefHeight="20.0" prefWidth="117.0" promptText="Date" styleClass="sideButton" stylesheets="@StyleSheet.css" />
+                  <HBox layoutX="48.0" layoutY="190.0" prefHeight="27.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="choiceEx" prefWidth="150.0" promptText="Select One" styleClass="sideButton" stylesheets="@StyleSheet.css" />
+                        <TextField fx:id="tb_km" prefHeight="27.0" prefWidth="39.0" promptText="KM" styleClass="textbox" stylesheets="@StyleSheet.css" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="21.0" layoutY="343.0" prefHeight="52.0" prefWidth="255.0">
+                     <children>
+                        <ComboBox fx:id="gym" prefHeight="27.0" prefWidth="195.0" promptText="Yes/No" styleClass="sideButton" stylesheets="@StyleSheet.css" />
+                        <TextField fx:id="gymhrs" prefHeight="29.0" prefWidth="164.0" promptText="Hours Spent" styleClass="textbox" stylesheets="@StyleSheet.css" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="submit" layoutX="120.0" layoutY="389.0" mnemonicParsing="false" onAction="#handleSubmitButton" stylesheets="@StyleSheet.css" text="Submit" textFill="#268265" />
+                  <HBox layoutX="20.0" layoutY="268.0" prefHeight="29.0" prefWidth="255.0">
+                     <children>
+                        <ComboBox fx:id="choiceRes" prefHeight="27.0" prefWidth="146.0" promptText="Select One" styleClass="sideButton" stylesheets="@StyleSheet.css" />
+                        <TextField fx:id="tb_reps" prefHeight="29.0" prefWidth="59.0" promptText="REPS" styleClass="textbox" stylesheets="@StyleSheet.css" />
+                        <TextField fx:id="kgs" prefHeight="29.0" prefWidth="51.0" promptText="KGS" styleClass="textbox" stylesheets="@StyleSheet.css" />
+                     </children>
+                  </HBox>
+                  <Label layoutX="72.0" layoutY="14.0" prefHeight="49.0" prefWidth="117.0" styleClass="page-title" stylesheets="@StyleSheet.css" text="Exercise">
+                     <font>
+                        <Font name="Gabriola" size="40.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#538493" layoutX="75.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Did you go Gym today? ">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#538493" layoutX="85.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resistance Exercise">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#538493" layoutX="92.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aerobics Exercise">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#538493" layoutX="32.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What exercises have you done today?">
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="tyMsg" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="430.0" prefHeight="17.0" prefWidth="255.0" text="Thankyou for submitting your exercises!" textAlignment="CENTER" textFill="#538493" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
